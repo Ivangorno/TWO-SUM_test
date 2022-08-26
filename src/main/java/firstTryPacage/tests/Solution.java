@@ -14,6 +14,7 @@ import  java.util.HashMap;
 
                   }
        public static int[] twoSum(int[] nums, int target) {
+           //додав тут static для підтягування в main, але в завданні це public int[] (без static)
 
            int[] rightIndexes = new int[2];
 
