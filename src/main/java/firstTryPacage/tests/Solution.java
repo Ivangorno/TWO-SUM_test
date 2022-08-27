@@ -5,11 +5,14 @@ import  java.util.HashMap;
 
 
    public class Solution {
-      // int[] mainArray = {9,3,4,5};
+
 
        public static void main(String[] args) {
          int[] mainArray = {9,3,4,5};
-           twoSum( mainArray, 7 );
+          // twoSum( mainArray, 9 );
+         int[] forPrintIndex =   twoSum( mainArray, 9 );
+
+           printIndexes(forPrintIndex);
 
 
                   }
@@ -37,6 +40,13 @@ import  java.util.HashMap;
            return rightIndexes;
        }
 
+       private static void printIndexes(int[] forPrintIndex) {
+            for (int i = 0; i <forPrintIndex.length; i++) {
+               System.out.println(forPrintIndex[i] );
+                       }
+           System.out.println();
+
+       }
 
 
    }
